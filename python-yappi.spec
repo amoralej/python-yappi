@@ -123,5 +123,5 @@ export PYTHONPATH=%{buildroot}/%{python3_sitearch}
 %endif
 
 %changelog
-* Thu Feb 21 2019 Alfredo Moralejo <amoralej@redhat.com> - 1.24.1-3
+* Thu Feb 21 2019 Alfredo Moralejo <amoralej@redhat.com> - 1.0-1
 - Initial version
