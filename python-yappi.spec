@@ -17,7 +17,7 @@
 Name:           python-%{srcname}
 Version:        1.0
 Release:        1%{?dist}
-Summary:        Yet Another Python Profiler, but this time support Multithread/CPU time profiling.
+Summary:        Yet Another Python Profiler, supports Multithread/CPU time profiling
 
 License:        MIT
 URL:            https://github.com/sumerc/yappi
@@ -27,11 +27,12 @@ BuildRequires:  git
 BuildRequires:  gcc
 
 %description
-Yappi, Yet Another Python Profiler, provides multithreading and cpu-time support to profile python programs.
+Yappi, Yet Another Python Profiler, provides multithreading and cpu-time
+support to profile python programs.
 
 %if 0%{?with_python2}
 %package -n python2-%{srcname}
-Summary:        Yet Another Python Profiler, but this time support Multithread/CPU time profiling.
+Summary:        Yet Another Python Profiler, supports Multithread/CPU time profiling.
 %{?python_provide:%python_provide python2-%{srcname}}
 
 # Previously bundled things:
@@ -39,19 +40,21 @@ BuildRequires:       python2-devel
 BuildRequires:       python2-setuptools
 
 %description -n python2-%{srcname}
-Yappi, Yet Another Python Profiler, provides multithreading and cpu-time support to profile python programs.
+Yappi, Yet Another Python Profiler, provides multithreading and cpu-time
+support to profile python programs.
 
 %endif
 
 %if 0%{?with_python3}
 %package -n python3-%{srcname}
-Summary:        Yet Another Python Profiler, but this time support Multithread/CPU time profiling.
+Summary:        Yet Another Python Profiler, supports Multithread/CPU time profiling.
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 
 %description -n python3-%{srcname}
-Yappi, Yet Another Python Profiler, provides multithreading and cpu-time support to profile python programs.
+Yappi, Yet Another Python Profiler, provides multithreading and cpu-time
+support to profile python programs.
 
 %endif
 
